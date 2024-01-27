@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Icon, SubTitle, Title } from "./Introduce";
+import { Icon, Title } from "../styles/share";
 import { RiShoppingBagLine } from "react-icons/ri";
 
 const Container = styled.div`
@@ -14,7 +14,7 @@ function Resume() {
           <Icon>
             <RiShoppingBagLine />
           </Icon>
-          <SubTitle>Resume</SubTitle>
+          Resume
         </Title>
         <div>ssad</div>
         <div>ssad</div>

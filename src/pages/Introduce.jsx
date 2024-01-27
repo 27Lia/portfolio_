@@ -9,7 +9,6 @@ export const Title = styled.h5`
   border-radius: 30px;
   padding: 9px 20px;
   border: 1px solid #fff;
-  color: #fff;
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
@@ -20,8 +19,6 @@ export const Title = styled.h5`
 export const Icon = styled.h4`
   margin-right: 8px;
 `;
-
-export const SubTitle = styled.span``;
 
 function Introduce() {
   return (

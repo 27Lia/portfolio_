@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Icon, SubTitle, Title } from "./Introduce";
+import { Icon, Title } from "../styles/share";
 import { LuBoxes } from "react-icons/lu";
 
 const Container = styled.div`
@@ -14,7 +14,7 @@ function Skills() {
           <Icon>
             <LuBoxes />
           </Icon>
-          <SubTitle>Skills</SubTitle>
+          <>Skills</>
         </Title>
         <div>ssad</div>
         <div>ssad</div>

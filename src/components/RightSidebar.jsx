@@ -1,4 +1,11 @@
 import styled from "styled-components";
+import { IoHomeOutline } from "react-icons/io5";
+import { RiShoppingBagLine } from "react-icons/ri";
+import { IoCallOutline } from "react-icons/io5";
+import { LuBoxes } from "react-icons/lu";
+import { IoDocumentAttachOutline } from "react-icons/io5";
+import { Button } from "../styles/share";
+import { MdOutlineEmail } from "react-icons/md";
 
 const Container = styled.div`
   max-width: 80px;
@@ -22,23 +29,25 @@ const BtnBox = styled.div`
   height: 100%;
 `;
 
-const Button = styled.button`
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 2px solid #ddd;
-  background-color: transparent;
-`;
-
 function RightSidebar() {
   return (
     <Container>
       <BtnBox>
-        <Button></Button>
-        <Button></Button>
-        <Button></Button>
-        <Button></Button>
-        <Button></Button>
+        <Button>
+          <IoHomeOutline />
+        </Button>
+        <Button>
+          <RiShoppingBagLine />
+        </Button>
+        <Button>
+          <LuBoxes />
+        </Button>
+        <Button>
+          <IoDocumentAttachOutline />
+        </Button>
+        <Button>
+          <MdOutlineEmail />
+        </Button>
       </BtnBox>
     </Container>
   );

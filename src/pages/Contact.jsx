@@ -1,9 +1,10 @@
 import styled from "styled-components";
-import { IoCallOutline } from "react-icons/io5";
-import { Icon, SubTitle, Title } from "./Introduce";
+import { Icon, Title } from "../styles/share";
+import { MdOutlineEmail } from "react-icons/md";
 
 const Container = styled.div`
   border: 1px solid blue;
+  height: 100%;
 `;
 
 function Contact() {
@@ -12,9 +13,9 @@ function Contact() {
       <Container>
         <Title>
           <Icon>
-            <IoCallOutline />
+            <MdOutlineEmail />
           </Icon>
-          <SubTitle>Contact</SubTitle>
+          <>Contact</>
         </Title>
         <div>aaaaaaaaaa</div>
         <div>ssad</div>

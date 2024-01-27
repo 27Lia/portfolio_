@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { IoDocumentAttachOutline } from "react-icons/io5";
-import { Icon, SubTitle, Title } from "./Introduce";
+import { Icon, Title } from "../styles/share";
 
 const Container = styled.div`
   border: 1px solid blue;
@@ -15,7 +15,7 @@ function Portfolio() {
           <Icon>
             <IoDocumentAttachOutline />
           </Icon>
-          <SubTitle>Portfolio</SubTitle>
+          <>Portfolio</>
         </Title>
         <div>aaaaaaaaaa</div>
         <div>ssad</div>

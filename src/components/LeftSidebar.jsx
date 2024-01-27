@@ -2,61 +2,93 @@ import styled from "styled-components";
 import { IoHomeOutline } from "react-icons/io5";
 import { FaRegFilePdf, FaGithub } from "react-icons/fa6";
 import { SiVelog } from "react-icons/si"; // Simple Icons
+import { Button } from "../styles/share";
+import { MdOutlineEmail } from "react-icons/md";
+
+// #CFD0C9 #07A94C #628dc2
 
 const Container = styled.div`
   max-width: 400px;
-  height: 660px;
+  height: 750px;
   width: 100%;
   border-radius: 30px;
-  border: 1px solid #565656;
+  border: 1px solid #cfd0c9;
   position: fixed;
   left: 20px;
   top: 50%;
   transform: translate(0%, -50%);
   z-index: 10;
   padding: 50px;
-  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
 `;
 
 const Header = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 `;
 
 const Img = styled.img`
   width: 300px;
-  height: 250px;
+  height: 260px;
   border-radius: 30px;
 `;
+
+const EmailBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 35px;
+`;
+
+const Span = styled.div`
+  font-weight: 400;
+  font-size: 21px;
+`;
+
 const BtnBox = styled.div`
   display: flex;
   justify-content: space-between;
 `;
 
-const Button = styled.button`
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 2px solid #ddd;
-  background-color: transparent;
-`;
-
 const EmailBtn = styled.button`
   width: 100%;
-  padding: 18px;
+  padding: 14px;
   border-radius: 30px;
+  background-color: #07a94c;
+  border: none;
+  border: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+
+  &:hover {
+    background-color: transparent;
+    border: 2px solid #07a94c;
+  }
+`;
+
+const Icon = styled(MdOutlineEmail)`
+  margin: 2px 10px 0px 0px;
 `;
 
 function LeftSidebar() {
   return (
     <Container>
       <Header>
-        <h1>이름</h1>
-        <span>설명</span>
+        <h1>Lia</h1>
+        <span>Front-end development</span>
       </Header>
-      <Img src="./profile2.png" alt="프로필사진"></Img>
-      <h2>이메일</h2>
-      <h2>주소</h2>
+      <Img src="./profile2.png"></Img>
+      <EmailBox>
+        <Span>tjs4114@gmail.com</Span>
+        <Span>서울시 송파구 문정동</Span>
+      </EmailBox>
       <BtnBox>
         <Button>
           <IoHomeOutline />
@@ -71,7 +103,12 @@ function LeftSidebar() {
           <FaGithub />
         </Button>
       </BtnBox>
-      <EmailBtn>이메일버튼</EmailBtn>
+      <EmailBtn>
+        <Icon>
+          <MdOutlineEmail />
+        </Icon>
+        Email
+      </EmailBtn>
     </Container>
   );
 }
