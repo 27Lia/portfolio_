@@ -3,17 +3,6 @@ import { IoHomeOutline } from "react-icons/io5";
 import { Icon, Title } from "../styles/share";
 // #CFD0C9 #07A94C #628dc2
 
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-`;
-
 const rotate = keyframes`
   from {
     transform: rotate(0deg);
@@ -26,7 +15,6 @@ const rotate = keyframes`
 const Container = styled.div`
   color: #fff;
   height: 100%;
-  animation: ${fadeIn} 1s ease-out;
   position: relative;
 `;
 
@@ -76,14 +64,13 @@ const Arrow = styled.button`
 function Introduce() {
   return (
     <>
-      <Container>
+      <Container data-aos="fade-up" data-aos-duration="700">
         <Title>
           <Icon>
             <IoHomeOutline />
           </Icon>
           Introduce
         </Title>
-
         <MainTitle>
           안녕하세요. <br /> 프론트엔드 개발자,
           <br /> <HighlightText>김선미</HighlightText>입니다.
@@ -93,7 +80,6 @@ function Introduce() {
           <br />
           반복작업을 지양하고, 적극적인 소통을 지향합니다.
         </Subtitle>
-
         <Circle>
           <Img src="../images/font.png" alt="dd" />
           <Arrow>↓</Arrow>

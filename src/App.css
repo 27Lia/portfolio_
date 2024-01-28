@@ -19,7 +19,7 @@
     margin-right: calc(150px); /* 사이드바 너비 + 사이드바의 margin-left */
     width: calc(100% - 150px); 
     margin-top: 150px;
-    padding: 0px 200px;
+    padding: 0px 250px;
   }
 
 

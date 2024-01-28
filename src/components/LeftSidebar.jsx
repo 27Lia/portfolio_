@@ -10,7 +10,7 @@ const Container = styled.div`
   height: 750px;
   width: 100%;
   border-radius: 30px;
-  border: 1px solid #cfd0c9;
+  /* border: 1px solid #cfd0c9; */
   position: fixed;
   left: 20px;
   top: 50%;
@@ -21,6 +21,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
   color: #fff;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2);
 `;
 
 const Header = styled.div`

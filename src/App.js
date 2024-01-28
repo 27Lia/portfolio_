@@ -16,8 +16,8 @@ function App() {
       <LeftSidebar />
       <div className="content">
         <Introduce />
-        <Resume />
         <Skills />
+        <Resume />
         <Portfolio />
         <Contact />
       </div>

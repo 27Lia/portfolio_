@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { Icon, Title } from "../styles/share";
+import { Icon, MainTitle, Title } from "../styles/share";
 import { RiShoppingBagLine } from "react-icons/ri";
 
 const Container = styled.div`
   color: #fff;
-  padding: 20px;
   position: relative;
+  padding: 90px 0px;
 `;
 
 const ExperienceBlock = styled.div`
@@ -24,12 +24,6 @@ const ExperienceBlock = styled.div`
     border-radius: 50%;
     transform: translate(-50%, 0);
   }
-`;
-
-const MainTitle = styled.div`
-  font-size: 42px;
-  font-weight: 300;
-  margin-bottom: 30px;
 `;
 
 const Year = styled.div`

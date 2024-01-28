@@ -1,11 +1,5 @@
-import styled from "styled-components";
-import { Icon, Title } from "../styles/share";
+import { Container, Icon, Title } from "../styles/share";
 import { MdOutlineEmail } from "react-icons/md";
-
-const Container = styled.div`
-  border: 1px solid blue;
-  height: 100%;
-`;
 
 function Contact() {
   return (
