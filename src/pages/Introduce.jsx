@@ -54,7 +54,7 @@ const Circle = styled.div`
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 40px;
+  bottom: 100px;
   right: 0px;
 `;
 
@@ -70,6 +70,7 @@ const Arrow = styled.button`
   background-color: transparent;
   border: none;
   color: #fff;
+  z-index: 1;
 `;
 
 function Introduce() {
