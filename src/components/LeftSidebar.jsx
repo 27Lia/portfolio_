@@ -5,8 +5,6 @@ import { SiVelog } from "react-icons/si"; // Simple Icons
 import { Button } from "../styles/share";
 import { MdOutlineEmail } from "react-icons/md";
 
-// #CFD0C9 #07A94C #628dc2
-
 const Container = styled.div`
   max-width: 400px;
   height: 750px;

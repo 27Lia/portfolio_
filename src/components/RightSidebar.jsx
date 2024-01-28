@@ -1,10 +1,8 @@
 import styled from "styled-components";
 import { IoHomeOutline } from "react-icons/io5";
 import { RiShoppingBagLine } from "react-icons/ri";
-import { IoCallOutline } from "react-icons/io5";
 import { LuBoxes } from "react-icons/lu";
 import { IoDocumentAttachOutline } from "react-icons/io5";
-import { Button } from "../styles/share";
 import { MdOutlineEmail } from "react-icons/md";
 
 const Container = styled.div`
@@ -17,7 +15,7 @@ const Container = styled.div`
   top: 50%;
   transform: translate(0%, -50%);
   z-index: 10;
-  border: 2px solid yellow;
+  border: 2px solid #ddd;
   padding: 18px;
 `;
 
@@ -25,29 +23,20 @@ const BtnBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 100%;
+  color: #fff;
 `;
 
 function RightSidebar() {
   return (
     <Container>
       <BtnBox>
-        <Button>
-          <IoHomeOutline />
-        </Button>
-        <Button>
-          <RiShoppingBagLine />
-        </Button>
-        <Button>
-          <LuBoxes />
-        </Button>
-        <Button>
-          <IoDocumentAttachOutline />
-        </Button>
-        <Button>
-          <MdOutlineEmail />
-        </Button>
+        <IoHomeOutline />
+        <RiShoppingBagLine />
+        <LuBoxes />
+        <IoDocumentAttachOutline />
+        <MdOutlineEmail />
       </BtnBox>
     </Container>
   );

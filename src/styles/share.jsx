@@ -18,6 +18,8 @@ export const Title = styled.h5`
   align-items: center;
   font-weight: 400;
   text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
 `;
 
 export const Icon = styled.h4`
