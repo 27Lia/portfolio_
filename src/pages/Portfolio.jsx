@@ -56,7 +56,7 @@ function Portfolio() {
 
   return (
     <>
-      <Container data-aos="fade-up" data-aos-duration="700">
+      <Container id="Portfolio" data-aos="fade-up" data-aos-duration="700">
         <Title>
           <Icon>
             <IoDocumentAttachOutline />

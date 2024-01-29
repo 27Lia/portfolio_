@@ -57,7 +57,7 @@ const Br = styled.div`
 function Resume() {
   return (
     <>
-      <Container>
+      <Container id="Resume">
         <div data-aos="fade-up" data-aos-duration="300">
           <Title>
             <Icon>

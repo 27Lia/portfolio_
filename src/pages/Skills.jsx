@@ -43,7 +43,7 @@ const SkillName = styled.h4`
 
 function Skills() {
   return (
-    <Container data-aos="fade-down" data-aos-duration="500">
+    <Container id="Skills" data-aos="fade-down" data-aos-duration="500">
       <Title>
         <Icon>
           <LuBoxes />

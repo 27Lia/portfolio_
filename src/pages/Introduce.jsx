@@ -36,13 +36,12 @@ const Subtitle = styled.p`
 const Circle = styled.div`
   width: 180px;
   height: 180px;
-  /* border: 1px solid #a0a0a0; */
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 100px;
+  bottom: 150px;
   right: 0px;
   background-color: #07a94c;
 `;

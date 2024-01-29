@@ -3,7 +3,8 @@ import { IoHomeOutline } from "react-icons/io5";
 import { RiShoppingBagLine } from "react-icons/ri";
 import { LuBoxes } from "react-icons/lu";
 import { IoDocumentAttachOutline } from "react-icons/io5";
-import { MdOutlineEmail } from "react-icons/md";
+// import { MdOutlineEmail } from "react-icons/md";
+import { Link } from "react-scroll";
 
 const Container = styled.div`
   max-width: 80px;
@@ -41,21 +42,33 @@ function RightSidebar() {
   return (
     <Container>
       <BtnBox>
-        <Button>
-          <IoHomeOutline />
-        </Button>
-        <Button>
-          <RiShoppingBagLine />
-        </Button>
-        <Button>
-          <LuBoxes />
-        </Button>
-        <Button>
-          <IoDocumentAttachOutline />
-        </Button>
-        <Button>
+        <Link to="App" smooth={true} duration={500}>
+          <Button>
+            <IoHomeOutline />
+          </Button>
+        </Link>
+
+        <Link to="Skills" smooth={true} duration={500}>
+          <Button>
+            <LuBoxes />
+          </Button>
+        </Link>
+
+        <Link to="Portfolio" smooth={true} duration={500}>
+          <Button>
+            <IoDocumentAttachOutline />
+          </Button>
+        </Link>
+
+        <Link to="Resume" smooth={true} duration={500}>
+          <Button>
+            <RiShoppingBagLine />
+          </Button>
+        </Link>
+
+        {/* <Button>
           <MdOutlineEmail />
-        </Button>
+        </Button> */}
       </BtnBox>
     </Container>
   );
