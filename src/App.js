@@ -5,7 +5,7 @@ import Introduce from "./pages/Introduce";
 import Resume from "./pages/Resume";
 import Skills from "./pages/Skills";
 import Portfolio from "./pages/Portfolio";
-import Contact from "./pages/Contact";
+// import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -17,11 +17,10 @@ function App() {
       <div className="content">
         <Introduce />
         <Skills />
-        <Resume />
         <Portfolio />
-        <Contact />
+        <Resume />
+        {/* <Contact /> */}
       </div>
-
       <RightSidebar />
     </div>
   );

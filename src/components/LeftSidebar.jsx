@@ -87,6 +87,11 @@ const Icon = styled(MdOutlineEmail)`
 `;
 
 function LeftSidebar() {
+  const handleEmailClick = () => {
+    window.location.href =
+      "mailto:tjs4114@gmail.com?subject=문의사항&body=메시지 내용을 여기에 작성하세요.";
+  };
+
   return (
     <Container>
       <Header>
@@ -112,7 +117,7 @@ function LeftSidebar() {
           <FaGithub />
         </Button>
       </BtnBox>
-      <EmailBtn>
+      <EmailBtn onClick={handleEmailClick}>
         <Icon>
           <MdOutlineEmail />
         </Icon>
