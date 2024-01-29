@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.div`
   overflow: auto;
   padding: 90px 0px;
-
   &::-webkit-scrollbar {
     height: 12px;
   }
@@ -15,6 +14,11 @@ export const Button = styled.button`
   border: 2px solid #cfd0c9;
   background-color: transparent;
   color: #cfd0c9;
+
+  &:hover {
+    border: 2px solid #07a94c;
+    color: #07a94c;
+  }
 `;
 
 export const Title = styled.h5`

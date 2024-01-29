@@ -9,17 +9,17 @@
     width: 100%;
     height: 100%;
     z-index: -1; 
-    /* opacity: 0.4; */
+    opacity: 0.2;
     object-fit: cover; 
-    background-color: rgba(0, 0, 0, 0.884);
   }
 
   .content {
     margin-left: calc(420px); /* 사이드바 너비 + 사이드바의 margin-left */
     margin-right: calc(150px); /* 사이드바 너비 + 사이드바의 margin-left */
     width: calc(100% - 150px); 
-    margin-top: 150px;
-    padding: 0px 250px;
+    margin-top: 110px;
+    padding: 0px 250px;   
+
   }
 
 

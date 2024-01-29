@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <video className="body-overlay" autoPlay loop muted>
-        {/* <source src="/wave5.mp4" type="video/mp4" /> */}
+        <source src="/wave5.mp4" type="video/mp4" />
       </video>
       <LeftSidebar />
       <div className="content">

@@ -36,7 +36,7 @@ const Subtitle = styled.p`
 const Circle = styled.div`
   width: 180px;
   height: 180px;
-  border: 1px solid #a0a0a0;
+  /* border: 1px solid #a0a0a0; */
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -44,6 +44,7 @@ const Circle = styled.div`
   position: absolute;
   bottom: 100px;
   right: 0px;
+  background-color: #07a94c;
 `;
 
 const Img = styled.img`

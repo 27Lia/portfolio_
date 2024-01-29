@@ -8,13 +8,13 @@ const CardBox = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 22px;
+  gap: 25px;
 `;
 
 const SkillCard = styled.div`
-  width: 190px;
+  width: 180px;
   border-radius: 12px;
-  height: 110px;
+  height: 120px;
 
   display: flex;
   flex-direction: column;
@@ -27,7 +27,7 @@ const SkillCard = styled.div`
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2);
 
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.04);
   }
 `;
 
@@ -52,7 +52,7 @@ function Skills() {
       </Title>
       <MainTitle>My Skills</MainTitle>
 
-      <CardBox>
+      <CardBox data-aos="fade-left" data-aos-duration="700">
         {skills.map((skill, index) => (
           <SkillCard key={skill.id} index={index}>
             <SkillName>{skill.name}</SkillName>

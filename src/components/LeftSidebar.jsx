@@ -10,7 +10,7 @@ const Container = styled.div`
   height: 750px;
   width: 100%;
   border-radius: 30px;
-  /* border: 1px solid #cfd0c9; */
+  border: 1px solid #cfd0c94f;
   position: fixed;
   left: 20px;
   top: 50%;
@@ -21,7 +21,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
   color: #fff;
-  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2);
+  /* box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2); */
 `;
 
 const Header = styled.div`
@@ -29,9 +29,12 @@ const Header = styled.div`
   flex-direction: column;
 `;
 
+const Name = styled.div`
+  font-size: 38px;
+  font-weight: 500;
+`;
+
 const Img = styled.img`
-  width: 300px;
-  height: 260px;
   border-radius: 30px;
 `;
 
@@ -42,9 +45,10 @@ const EmailBox = styled.div`
   line-height: 35px;
 `;
 
-const Span = styled.div`
+const Span = styled.span`
   font-weight: 400;
-  font-size: 21px;
+  font-size: 18px;
+  color: #cfd0c9;
 `;
 
 const BtnBox = styled.div`
@@ -54,21 +58,27 @@ const BtnBox = styled.div`
 
 const EmailBtn = styled.button`
   width: 100%;
-  padding: 14px;
+  padding: 16px;
   border-radius: 30px;
-  background-color: #07a94c;
-  border: none;
-  border: 2px solid transparent;
+  /* background-color: #07a94c; */
+  background-color: transparent;
+  /* border: none; */
+  border: 1px solid #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 18px;
   color: #fff;
   font-weight: 300;
+  /* box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2); */
 
   &:hover {
     background-color: transparent;
-    border: 2px solid #07a94c;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.12);
+
+    /* background-color: #07a94c; */
+    /* border: 1px solid #07a94c; */
+    /* border: 2px solid #07a94c; */
   }
 `;
 
@@ -80,10 +90,10 @@ function LeftSidebar() {
   return (
     <Container>
       <Header>
-        <h1>Lia</h1>
-        <span>Front-end development</span>
+        <Name>Lia</Name>
+        <Span>Front-end development</Span>
       </Header>
-      <Img src="./profile2.png"></Img>
+      <Img src="./profile3.png"></Img>
       <EmailBox>
         <Span>tjs4114@gmail.com</Span>
         <Span>서울시 송파구 문정동</Span>

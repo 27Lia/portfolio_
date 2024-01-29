@@ -86,8 +86,8 @@ function Resume() {
             <SubTitle>회원관리팀 / 인턴</SubTitle>
             <Role>한국음악실연자연합회</Role>
             <Description>
-              <div>- CMS를 통한 음악 사용 로그 데이터 분석 및 관리</div>
-              <div>- 뮤지션 지원 업무보조</div>
+              <div>- CMS를 통한 음악 사용 로그 데이터 분석</div>
+              <div>- 뮤지션 지원 업무</div>
               <div>- 인공지능 학습용 데이터 구축사업 참여</div>
             </Description>
           </ExperienceBlock>
