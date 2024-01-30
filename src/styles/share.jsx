@@ -6,8 +6,13 @@ export const Container = styled.div`
   max-width: 700px;
   // 미디어쿼리시 삭제
   margin: auto;
+
   &::-webkit-scrollbar {
     height: 12px;
+  }
+
+  @media (max-width: 1400px) {
+    margin: 0;
   }
 `;
 export const Button = styled.button`

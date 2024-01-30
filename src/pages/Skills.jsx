@@ -11,14 +11,18 @@ import skills from "../data/skills.json";
 
 const CardBox = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-wrap: wrap;
   gap: 25px;
+
+  @media (max-width: 700px) {
+    justify-content: center;
+  }
 `;
 
 const SkillCard = styled.div`
-  width: 180px;
+  width: 200px;
   border-radius: 12px;
   height: 120px;
 
@@ -26,7 +30,6 @@ const SkillCard = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-
   background-color: transparent;
   color: #fff;
   transition: transform 0.3s ease;

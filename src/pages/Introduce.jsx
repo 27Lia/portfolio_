@@ -15,11 +15,16 @@ const rotate = keyframes`
 
 const Container = styled.div`
   color: #fff;
-  height: 100%;
   position: relative;
   max-width: 700px;
-  // 미디어쿼리 시 삭제
+  /* width:100% */
   margin: auto;
+  padding: 0px 0px 90px 0px;
+
+  @media (max-width: 1400px) {
+    margin: 0;
+    width: 100%;
+  }
 `;
 
 const MainTitle = styled.h1`

@@ -10,30 +10,41 @@ const Container = styled.div`
   width: 100%;
   border-radius: 30px;
   border: 1px solid #cfd0c94f;
-  height: 100%;
-  // 미디어 쿼리 삭제
-  position: fixed;
-  left: 20px;
-  top: 50%;
-  transform: translate(0%, -50%);
-  z-index: 10;
-  // 미디어 쿼리 삭제
-
+  height: 750px;
   padding: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   color: #fff;
+  // 미디어 쿼리 삭제
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translate(0%, -50%);
+  // 미디어 쿼리 삭제
 
   @media (max-width: 1400px) {
-    max-width: 350px;
+    max-width: 700px;
+    /* width: 100%; */
     padding: 30px;
+    transform: none;
+    top: auto;
+    left: auto;
+    position: static;
+    height: 650px;
+    align-items: center;
   }
 `;
 
 const Header = styled.div`
   display: flex;
   flex-direction: column;
+  @media (max-width: 1400px) {
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+  }
 `;
 
 const Name = styled.div`
@@ -43,9 +54,12 @@ const Name = styled.div`
 
 const Img = styled.img`
   border-radius: 30px;
-  // 미디어쿼리추가
-  /* height: 200px;
-  width: 200px; */
+
+  @media (max-width: 1400px) {
+    // 미디어쿼리추가
+    height: 200px;
+    width: 200px;
+  }
 `;
 
 const EmailBox = styled.div`
@@ -64,6 +78,11 @@ const Span = styled.span`
 const BtnBox = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (max-width: 1400px) {
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+  }
 `;
 
 const EmailBtn = styled.button`

@@ -6,7 +6,6 @@ import Resume from "./pages/Resume";
 import Skills from "./pages/Skills";
 import Portfolio from "./pages/Portfolio";
 import Header from "./components/Header";
-// import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -23,8 +22,7 @@ function App() {
           <Portfolio />
           <Resume />
         </div>
-
-        <RightSidebar />
+        {/* <RightSidebar /> */}
       </div>
     </>
   );
