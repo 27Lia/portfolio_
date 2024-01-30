@@ -55,9 +55,13 @@ function Portfolio() {
     background-color: #fff;
     border-radius: 17px;
     padding: 5px 18px;
+    margin-right: 8px;
+  `;
+
+  const BtnBox = styled.a`
+    bottom: 12px;
+    left: 10px;
     position: absolute;
-    bottom: 6%;
-    left: 3%;
   `;
 
   return (
@@ -74,22 +78,37 @@ function Portfolio() {
 
       <Div data-aos="fade-right" data-aos-duration="1000">
         <Img src="../images/1.png" alt="포트폴리오 이미지"></Img>
-        <Button href="https://nctmbti.vercel.app/" target="_blank">
-          Site
-        </Button>
+        <BtnBox>
+          <Button href="https://nctmbti.vercel.app/" target="_blank">
+            Site
+          </Button>
+          <Button target="_blank" href="https://github.com/27Lia/mbti">
+            Repo
+          </Button>
+        </BtnBox>
       </Div>
       <Div data-aos="fade-up" data-aos-duration="1000">
         <Img src="../images/2.png" alt="포트폴리오 이미지"></Img>
-        <Button href="https://junkshop.vercel.app/" target="_blank">
-          Site
-        </Button>
+        <BtnBox>
+          <Button href="https://junkshop.vercel.app/" target="_blank">
+            Site
+          </Button>
+          <Button target="_blank" href="https://github.com/27Lia/junkshop">
+            Repo
+          </Button>
+        </BtnBox>
       </Div>
       <SecondBox>
         <Div3 data-aos="fade-right" data-aos-duration="1000">
           <Img src="../images/003.png" alt="포트폴리오 이미지"></Img>
-          <Button href="https://celebee-three.vercel.app/" target="_blank">
-            Site
-          </Button>
+          <BtnBox>
+            <Button href="https://celebee-three.vercel.app/" target="_blank">
+              Site
+            </Button>
+            <Button target="_blank" href="https://github.com/27Lia/celebee">
+              Repo
+            </Button>{" "}
+          </BtnBox>
         </Div3>
 
         <Div3 data-aos="fade-left" data-aos-duration="1000">
@@ -98,12 +117,20 @@ function Portfolio() {
       </SecondBox>
       <Div4 data-aos="fade-down" data-aos-duration="1000">
         <Img src="../images/5.png" alt="포트폴리오 이미지"></Img>
-        <Button
-          href="https://fe-sprint-coz-shopping-eta.vercel.app/"
-          target="_blank"
-        >
-          Site
-        </Button>
+        <BtnBox>
+          <Button
+            href="https://fe-sprint-coz-shopping-eta.vercel.app/"
+            target="_blank"
+          >
+            Site
+          </Button>
+          <Button
+            target="_blank"
+            href="https://github.com/27Lia/fe-sprint-coz-shopping"
+          >
+            Repo
+          </Button>
+        </BtnBox>
       </Div4>
     </Container>
   );

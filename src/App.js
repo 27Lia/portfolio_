@@ -22,7 +22,7 @@ function App() {
           <Portfolio />
           <Resume />
         </div>
-        {/* <RightSidebar /> */}
+        <RightSidebar />
       </div>
     </>
   );

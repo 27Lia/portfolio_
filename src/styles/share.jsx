@@ -18,6 +18,7 @@ export const Container = styled.div`
 export const Button = styled.button`
   width: 50px;
   height: 50px;
+  font-size: 16px;
   border-radius: 50%;
   border: 2px solid #cfd0c9;
   background-color: transparent;

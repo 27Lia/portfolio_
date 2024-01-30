@@ -1,10 +1,12 @@
 import styled from "styled-components";
-import { IoHomeOutline } from "react-icons/io5";
-import { RiShoppingBagLine } from "react-icons/ri";
-import { LuBoxes } from "react-icons/lu";
-import { IoDocumentAttachOutline } from "react-icons/io5";
-// import { MdOutlineEmail } from "react-icons/md";
-import { Link } from "react-scroll";
+import React, { useEffect, useRef, useState } from "react";
+import { IoMdMenu } from "react-icons/io";
+import MenuItems from "./MenuItems";
+
+const ItemBox = styled.div`
+  margin-top: 100px;
+  height: 250px;
+`;
 
 const Container = styled.div`
   max-width: 80px;
@@ -17,62 +19,79 @@ const Container = styled.div`
   transform: translate(0%, -50%);
   z-index: 10;
   padding: 18px;
-  /* background-color: #58585849; */
   box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.497);
-`;
-
-const BtnBox = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  height: 100%;
-`;
-
-const Button = styled.button`
-  background-color: transparent;
-  border: none;
-  font-size: 21px;
-  color: #fff;
-
-  &:hover {
-    color: #07a94c;
+  @media (max-width: 1100px) {
+    display: none;
   }
 `;
 
+const MenuButton = styled.button`
+  display: none;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 1px solid #575757;
+  background: #1f1f1f;
+  color: #fff;
+  font-size: 29px;
+
+  @media (max-width: 1100px) {
+    display: block;
+  }
+`;
+
+const MobileMenu = styled.div`
+  position: fixed;
+  height: 100vh;
+  width: 350px;
+  top: 0px;
+  right: 0px;
+  background-color: #202020;
+  padding: 10px;
+  display: ${(props) => (props.show ? "block" : "none")};
+`;
+
 function RightSidebar() {
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const mobileMenuRef = useRef();
+
+  const toggleMobileMenu = () => {
+    setShowMobileMenu(!showMobileMenu);
+  };
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (
+        mobileMenuRef.current &&
+        !mobileMenuRef.current.contains(event.target)
+      ) {
+        setShowMobileMenu(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [mobileMenuRef]);
+
   return (
-    <Container>
-      <BtnBox>
-        <Link to="App" smooth={true} duration={500}>
-          <Button>
-            <IoHomeOutline />
-          </Button>
-        </Link>
-
-        <Link to="Skills" smooth={true} duration={500}>
-          <Button>
-            <LuBoxes />
-          </Button>
-        </Link>
-
-        <Link to="Portfolio" smooth={true} duration={500}>
-          <Button>
-            <IoDocumentAttachOutline />
-          </Button>
-        </Link>
-
-        <Link to="Resume" smooth={true} duration={500}>
-          <Button>
-            <RiShoppingBagLine />
-          </Button>
-        </Link>
-
-        {/* <Button>
-          <MdOutlineEmail />
-        </Button> */}
-      </BtnBox>
-    </Container>
+    <>
+      <MenuButton onClick={toggleMobileMenu}>
+        <IoMdMenu />
+      </MenuButton>
+      <MobileMenu show={showMobileMenu} ref={mobileMenuRef}>
+        <ItemBox>
+          <MenuItems />
+        </ItemBox>
+      </MobileMenu>
+      <Container>
+        <MenuItems />
+      </Container>
+    </>
   );
 }
 

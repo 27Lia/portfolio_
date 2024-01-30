@@ -31,7 +31,7 @@ const Container = styled.div`
     top: auto;
     left: auto;
     position: static;
-    height: 650px;
+    height: 700px;
     align-items: center;
   }
 `;
@@ -40,16 +40,13 @@ const Header = styled.div`
   display: flex;
   flex-direction: column;
   @media (max-width: 1400px) {
-    justify-content: space-between;
     width: 100%;
-    flex-direction: row;
-    align-items: center;
   }
 `;
 
 const Name = styled.div`
-  font-size: 38px;
-  font-weight: 500;
+  font-size: 40px;
+  font-weight: 400;
 `;
 
 const Img = styled.img`
@@ -57,8 +54,8 @@ const Img = styled.img`
 
   @media (max-width: 1400px) {
     // 미디어쿼리추가
-    height: 200px;
-    width: 200px;
+    height: 280px;
+    width: 310px;
   }
 `;
 
@@ -81,7 +78,7 @@ const BtnBox = styled.div`
   @media (max-width: 1400px) {
     width: 100%;
     justify-content: center;
-    gap: 20px;
+    gap: 36px;
   }
 `;
 
