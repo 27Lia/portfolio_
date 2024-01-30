@@ -10,7 +10,7 @@ const Container = styled.div`
   width: 100%;
   border-radius: 30px;
   border: 1px solid #cfd0c94f;
-
+  height: 100%;
   // 미디어 쿼리 삭제
   position: fixed;
   left: 20px;
