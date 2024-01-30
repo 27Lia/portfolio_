@@ -22,6 +22,7 @@ const Container = styled.div`
   top: 50%;
   transform: translate(0%, -50%);
   // 미디어 쿼리 삭제
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.497);
 
   @media (max-width: 1400px) {
     max-width: 700px;
@@ -86,8 +87,8 @@ const EmailBtn = styled.button`
   width: 100%;
   padding: 16px;
   border-radius: 30px;
-  background-color: transparent;
-  border: 1px solid #fff;
+  background-color: #07a94c;
+  border: 1px solid #07a94c;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,7 +98,7 @@ const EmailBtn = styled.button`
 
   &:hover {
     background-color: transparent;
-    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.12);
+    border: 1px solid #07a94c;
   }
 `;
 
