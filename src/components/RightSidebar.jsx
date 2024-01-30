@@ -8,7 +8,7 @@ import { Link } from "react-scroll";
 
 const Container = styled.div`
   max-width: 80px;
-  height: 450px;
+  height: 400px;
   border-radius: 40px;
   border: 1px solid #cfd0c9;
   position: fixed;
@@ -17,21 +17,23 @@ const Container = styled.div`
   transform: translate(0%, -50%);
   z-index: 10;
   padding: 18px;
+  /* background-color: #58585849; */
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.497);
 `;
 
 const BtnBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   height: 100%;
 `;
 
 const Button = styled.button`
   background-color: transparent;
   border: none;
-  color: #cfd0c9;
   font-size: 21px;
+  color: #fff;
 
   &:hover {
     color: #07a94c;

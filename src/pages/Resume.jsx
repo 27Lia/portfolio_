@@ -1,11 +1,13 @@
 import styled from "styled-components";
-import { Icon, MainTitle, Title } from "../styles/share";
+import { HighlightText, Icon, MainTitle, Title } from "../styles/share";
 import { RiShoppingBagLine } from "react-icons/ri";
 
 const Container = styled.div`
   color: #fff;
   position: relative;
   padding: 90px 0px;
+  max-width: 700px;
+  margin: auto;
 `;
 
 const ExperienceBlock = styled.div`
@@ -58,7 +60,7 @@ function Resume() {
   return (
     <>
       <Container id="Resume">
-        <div data-aos="fade-up" data-aos-duration="300">
+        <div data-aos="fade-up" data-aos-duration="1000">
           <Title>
             <Icon>
               <RiShoppingBagLine />
@@ -67,7 +69,7 @@ function Resume() {
           </Title>
           <MainTitle>Career </MainTitle>
         </div>
-        <div data-aos="fade-left" data-aos-duration="800">
+        <div data-aos="fade-left" data-aos-duration="1000">
           <ExperienceBlock>
             <Year>2022.01 - 2023.02</Year>
             <SubTitle>컨텐츠 운영팀 / 사원</SubTitle>
@@ -93,8 +95,16 @@ function Resume() {
           </ExperienceBlock>
           <Br />
         </div>
-        <div data-aos="fade-left" data-aos-duration="800">
-          <MainTitle>Education</MainTitle>
+        <div data-aos="fade-left" data-aos-duration="1000">
+          <MainTitle>
+            Education & <HighlightText>Experience</HighlightText>
+          </MainTitle>
+          <ExperienceBlock>
+            <Year>2023.04.11 - 2023.10.05</Year>
+            <SubTitle>Front-end Software Education</SubTitle>
+            <Role>코드스테이츠 </Role>
+            <Br />
+          </ExperienceBlock>
           <ExperienceBlock>
             <Year>2022.03 -</Year>
             <SubTitle> 방송통신대학교 (휴학)</SubTitle>
@@ -107,14 +117,9 @@ function Resume() {
             <Role> 음악학부</Role>
           </ExperienceBlock>
         </div>
-        <Br />
-        <div data-aos="fade-left" data-aos-duration="800">
-          <MainTitle> Experience & Awards</MainTitle>
-          <ExperienceBlock>
-            <Year>2023.04.11 - 2023.10.05</Year>
-            <SubTitle>Front-end Software Education</SubTitle>
-            <Role>코드스테이츠 </Role> <Br />
-          </ExperienceBlock>
+        <div data-aos="fade-left" data-aos-duration="1000">
+          <MainTitle> Awards</MainTitle>
+
           <ExperienceBlock>
             <Year>2021.12</Year>
             <SubTitle>

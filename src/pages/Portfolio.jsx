@@ -1,5 +1,11 @@
 import { IoDocumentAttachOutline } from "react-icons/io5";
-import { Container, Icon, MainTitle, Title } from "../styles/share";
+import {
+  Container,
+  HighlightText,
+  Icon,
+  MainTitle,
+  Title,
+} from "../styles/share";
 import styled from "styled-components";
 
 function Portfolio() {
@@ -14,7 +20,6 @@ function Portfolio() {
 
   const Div3 = styled.div`
     margin-bottom: 30px;
-    height: 400px;
     width: 100%;
     background-color: #bdb7e9;
     border-radius: 18px;
@@ -31,6 +36,7 @@ function Portfolio() {
 
   const Img = styled.img`
     width: 100%;
+    height: 100%; // 맥북에선 있어야함.
     border-radius: 18px;
   `;
 
@@ -41,7 +47,7 @@ function Portfolio() {
     gap: 40px;
   `;
 
-  const Button = styled.button`
+  const Button = styled.a`
     background-color: transparent;
     border: none;
     font-size: 16px;
@@ -55,43 +61,51 @@ function Portfolio() {
   `;
 
   return (
-    <>
-      <Container id="Portfolio" data-aos="fade-up" data-aos-duration="700">
-        <Title>
-          <Icon>
-            <IoDocumentAttachOutline />
-          </Icon>
-          <>Portfolio</>
-        </Title>
+    <Container id="Portfolio" data-aos="fade-up" data-aos-duration="1000">
+      <Title>
+        <Icon>
+          <IoDocumentAttachOutline />
+        </Icon>
+        <>Portfolio</>
+      </Title>
+      <MainTitle>
+        My <HighlightText>Projects</HighlightText>
+      </MainTitle>
 
-        <MainTitle>Projects</MainTitle>
+      <Div data-aos="fade-right" data-aos-duration="1000">
+        <Img src="../images/1.png" alt="포트폴리오 이미지"></Img>
+        <Button href="https://nctmbti.vercel.app/" target="_blank">
+          Site
+        </Button>
+      </Div>
+      <Div data-aos="fade-up" data-aos-duration="1000">
+        <Img src="../images/2.png" alt="포트폴리오 이미지"></Img>
+        <Button href="https://junkshop.vercel.app/" target="_blank">
+          Site
+        </Button>
+      </Div>
+      <SecondBox>
+        <Div3 data-aos="fade-right" data-aos-duration="1000">
+          <Img src="../images/003.png" alt="포트폴리오 이미지"></Img>
+          <Button href="https://celebee-three.vercel.app/" target="_blank">
+            Site
+          </Button>
+        </Div3>
 
-        <Div data-aos="fade-down" data-aos-duration="600">
-          <Img src="../images/1.png" alt="d"></Img>
-          <Button>Site</Button>
-        </Div>
-
-        <Div data-aos="fade-down" data-aos-duration="600">
-          <Img src="../images/2.png" alt="d"></Img>
-          <Button>Site</Button>
-        </Div>
-
-        <SecondBox>
-          <Div3 data-aos="fade-right" data-aos-duration="700">
-            <Img src="../images/003.png" alt="d"></Img>
-            <Button>Site</Button>
-          </Div3>
-
-          <Div3 data-aos="fade-left" data-aos-duration="700">
-            <Img src="../images/4.png" alt="d"></Img>
-          </Div3>
-        </SecondBox>
-        <Div4 data-aos="fade-down" data-aos-duration="600">
-          <Img src="../images/5.png" alt="d"></Img>
-          <Button>Site</Button>
-        </Div4>
-      </Container>
-    </>
+        <Div3 data-aos="fade-left" data-aos-duration="1000">
+          <Img src="../images/4.png" alt="포트폴리오 이미지"></Img>
+        </Div3>
+      </SecondBox>
+      <Div4 data-aos="fade-down" data-aos-duration="1000">
+        <Img src="../images/5.png" alt="포트폴리오 이미지"></Img>
+        <Button
+          href="https://fe-sprint-coz-shopping-eta.vercel.app/"
+          target="_blank"
+        >
+          Site
+        </Button>
+      </Div4>
+    </Container>
   );
 }
 

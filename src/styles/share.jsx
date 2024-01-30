@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const Container = styled.div`
   overflow: auto;
   padding: 90px 0px;
+  max-width: 700px;
+  // 미디어쿼리시 삭제
+  margin: auto;
   &::-webkit-scrollbar {
     height: 12px;
   }
@@ -39,7 +42,11 @@ export const Icon = styled.h4`
 `;
 export const MainTitle = styled.div`
   font-size: 42px;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 30px;
+  color: #fff;
+`;
+
+export const HighlightText = styled.span`
   color: #07a94c;
 `;

@@ -1,6 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import { IoHomeOutline } from "react-icons/io5";
-import { Icon, Title } from "../styles/share";
+import { HighlightText, Icon, Title } from "../styles/share";
+import { Link } from "react-scroll";
 // #CFD0C9 #07A94C #628dc2
 
 const rotate = keyframes`
@@ -16,10 +17,9 @@ const Container = styled.div`
   color: #fff;
   height: 100%;
   position: relative;
-`;
-
-const HighlightText = styled.span`
-  color: #07a94c;
+  max-width: 700px;
+  // 미디어쿼리 시 삭제
+  margin: auto;
 `;
 
 const MainTitle = styled.h1`
@@ -40,10 +40,11 @@ const Circle = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  bottom: 150px;
-  right: 0px;
+  position: relative;
+  overflow: hidden;
+  margin-left: auto;
   background-color: #07a94c;
+  margin-right: 30px;
 `;
 
 const Img = styled.img`
@@ -58,13 +59,13 @@ const Arrow = styled.button`
   background-color: transparent;
   border: none;
   color: #fff;
-  z-index: 1;
+  z-index: 1000;
 `;
 
 function Introduce() {
   return (
     <>
-      <Container data-aos="fade-up" data-aos-duration="700">
+      <Container data-aos="fade-up" data-aos-duration="900">
         <Title>
           <Icon>
             <IoHomeOutline />
@@ -80,10 +81,12 @@ function Introduce() {
           <br />
           반복작업을 지양하고, 적극적인 소통을 지향합니다.
         </Subtitle>
-        <Circle>
-          <Img src="../images/font.png" alt="dd" />
-          <Arrow>↓</Arrow>
-        </Circle>
+        <Link to="Portfolio" smooth={true} duration={500}>
+          <Circle>
+            <Img src="../images/font.png" alt="dd" />
+            <Arrow>↓</Arrow>
+          </Circle>
+        </Link>
       </Container>
     </>
   );

@@ -11,19 +11,19 @@ import Header from "./components/Header";
 function App() {
   return (
     <>
+      <video class="body-overlay" autoPlay loop muted>
+        <source src="/wave5.mp4" type="video/mp4" />
+      </video>
       <Header />
       <div className="container">
-        <video className="body-overlay" autoPlay loop muted>
-          <source src="/wave5.mp4" type="video/mp4" />
-        </video>
-        <LeftSidebar />
         <div className="content">
+          <LeftSidebar />
           <Introduce />
           <Skills />
           <Portfolio />
           <Resume />
-          {/* <Contact /> */}
         </div>
+
         <RightSidebar />
       </div>
     </>

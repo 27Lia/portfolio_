@@ -7,21 +7,28 @@ import { MdOutlineEmail } from "react-icons/md";
 
 const Container = styled.div`
   max-width: 400px;
-  height: 750px;
   width: 100%;
   border-radius: 30px;
   border: 1px solid #cfd0c94f;
+
+  // 미디어 쿼리 삭제
   position: fixed;
   left: 20px;
   top: 50%;
   transform: translate(0%, -50%);
   z-index: 10;
+  // 미디어 쿼리 삭제
+
   padding: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   color: #fff;
-  /* box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2); */
+
+  @media (max-width: 1400px) {
+    max-width: 350px;
+    padding: 30px;
+  }
 `;
 
 const Header = styled.div`
@@ -36,6 +43,9 @@ const Name = styled.div`
 
 const Img = styled.img`
   border-radius: 30px;
+  // 미디어쿼리추가
+  /* height: 200px;
+  width: 200px; */
 `;
 
 const EmailBox = styled.div`
@@ -60,9 +70,7 @@ const EmailBtn = styled.button`
   width: 100%;
   padding: 16px;
   border-radius: 30px;
-  /* background-color: #07a94c; */
   background-color: transparent;
-  /* border: none; */
   border: 1px solid #fff;
   display: flex;
   align-items: center;
@@ -70,15 +78,10 @@ const EmailBtn = styled.button`
   font-size: 18px;
   color: #fff;
   font-weight: 300;
-  /* box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2); */
 
   &:hover {
     background-color: transparent;
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.12);
-
-    /* background-color: #07a94c; */
-    /* border: 1px solid #07a94c; */
-    /* border: 2px solid #07a94c; */
   }
 `;
 

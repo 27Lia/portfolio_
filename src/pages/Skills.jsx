@@ -1,5 +1,11 @@
 import styled from "styled-components";
-import { Container, Icon, MainTitle, Title } from "../styles/share";
+import {
+  Container,
+  HighlightText,
+  Icon,
+  MainTitle,
+  Title,
+} from "../styles/share";
 import { LuBoxes } from "react-icons/lu";
 import skills from "../data/skills.json";
 
@@ -43,16 +49,18 @@ const SkillName = styled.h4`
 
 function Skills() {
   return (
-    <Container id="Skills" data-aos="fade-down" data-aos-duration="500">
+    <Container id="Skills" data-aos="fade-down" data-aos-duration="1000">
       <Title>
         <Icon>
           <LuBoxes />
         </Icon>
         Skills
       </Title>
-      <MainTitle>My Skills</MainTitle>
+      <MainTitle>
+        My <HighlightText>Skills</HighlightText>
+      </MainTitle>
 
-      <CardBox data-aos="fade-left" data-aos-duration="700">
+      <CardBox data-aos="fade-left" data-aos-duration="1200">
         {skills.map((skill, index) => (
           <SkillCard key={skill.id} index={index}>
             <SkillName>{skill.name}</SkillName>
