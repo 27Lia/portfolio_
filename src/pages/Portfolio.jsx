@@ -78,7 +78,6 @@ function Portfolio() {
     background-color: #fff;
     border-radius: 17px;
     padding: 5px 18px;
-    margin-right: 8px;
     box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.239);
   `;
 
@@ -86,6 +85,10 @@ function Portfolio() {
     bottom: 15px;
     left: 10px;
     position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 10px;
   `;
 
   return (
