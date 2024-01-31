@@ -8,11 +8,16 @@ const Container = styled.div`
   padding: 90px 0px;
   max-width: 700px;
   margin: auto;
+  overflow: auto;
+  padding-left: 7px;
+  &::-webkit-scrollbar {
+    height: 12px;
+  }
 `;
 
 const ExperienceBlock = styled.div`
   position: relative;
-  padding-left: 60px;
+  padding-left: 53px;
   border-left: 1px solid;
 
   &:after {
@@ -22,7 +27,7 @@ const ExperienceBlock = styled.div`
     top: 0;
     height: 15px;
     width: 15px;
-    background-color: #07a94c; // 타임라인 점 색상
+    background-color: #07a94c;
     border-radius: 50%;
     transform: translate(-50%, 0);
   }
@@ -56,11 +61,15 @@ const Description = styled.div`
 const Br = styled.div`
   height: 30px;
 `;
+
+const Div = styled.div`
+  width: 100%;
+`;
 function Resume() {
   return (
     <>
       <Container id="Resume">
-        <div data-aos="fade-up" data-aos-duration="1000">
+        <Div data-aos="fade-down" data-aos-duration="1000">
           <Title>
             <Icon>
               <RiShoppingBagLine />
@@ -68,18 +77,18 @@ function Resume() {
             Resume
           </Title>
           <MainTitle>Career </MainTitle>
-        </div>
-        <div data-aos="fade-left" data-aos-duration="1000">
+        </Div>
+        <Div data-aos="fade-left" data-aos-duration="1000">
           <ExperienceBlock>
             <Year>2022.01 - 2023.02</Year>
             <SubTitle>컨텐츠 운영팀 / 사원</SubTitle>
             <Role>콘샐러드</Role>
             <Description>
-              <div>
+              <Div>
                 - apple music, youtube, spotify 외 해외 및 국내 파트너사
                 음악유통 업무
-              </div>
-              <div>- 데이터 관리 및 모니터링</div>
+              </Div>
+              <Div>- 데이터 관리 및 모니터링</Div>
               <Br />
             </Description>
           </ExperienceBlock>
@@ -94,8 +103,8 @@ function Resume() {
             </Description>
           </ExperienceBlock>
           <Br />
-        </div>
-        <div data-aos="fade-left" data-aos-duration="1000">
+        </Div>
+        <Div data-aos="fade-left" data-aos-duration="1000">
           <MainTitle>
             Education & <HighlightText>Experience</HighlightText>
           </MainTitle>
@@ -116,8 +125,8 @@ function Resume() {
             <SubTitle>백석예술대학교 (졸업)</SubTitle>
             <Role> 음악학부</Role>
           </ExperienceBlock>
-        </div>
-        <div data-aos="fade-left" data-aos-duration="1000">
+        </Div>
+        <Div data-aos="fade-left" data-aos-duration="1000">
           <MainTitle> Awards</MainTitle>
 
           <ExperienceBlock>
@@ -132,7 +141,7 @@ function Resume() {
               기획으로 해커톤에 참가하였습니다.
             </Role>
           </ExperienceBlock>
-        </div>
+        </Div>
       </Container>
     </>
   );

@@ -10,10 +10,10 @@ import Header from "./components/Header";
 function App() {
   return (
     <>
+      <Header />
       <video class="body-overlay" autoPlay loop muted>
         <source src="/wave5.mp4" type="video/mp4" />
       </video>
-      <Header />
       <div className="container">
         <div className="content">
           <LeftSidebar />

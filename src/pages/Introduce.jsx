@@ -17,13 +17,12 @@ const Container = styled.div`
   color: #fff;
   position: relative;
   max-width: 700px;
-  /* width:100% */
+  width: 100%;
   margin: auto;
   padding: 90px 0px 90px 0px;
 
   @media (max-width: 1400px) {
-    margin: 0;
-    width: 100%;
+    /* margin: 0; */
   }
 `;
 

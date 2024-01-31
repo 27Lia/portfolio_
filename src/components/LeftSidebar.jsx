@@ -7,6 +7,7 @@ import { MdOutlineEmail } from "react-icons/md";
 
 const Container = styled.div`
   max-width: 400px;
+  min-width: 216px;
   width: 100%;
   border-radius: 30px;
   border: 1px solid #cfd0c94f;
@@ -16,17 +17,14 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
   color: #fff;
-  // 미디어 쿼리 삭제
   position: fixed;
   left: 20px;
   top: 50%;
   transform: translate(0%, -50%);
-  // 미디어 쿼리 삭제
   box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.497);
 
   @media (max-width: 1400px) {
     max-width: 700px;
-    /* width: 100%; */
     padding: 30px;
     transform: none;
     top: auto;
@@ -52,12 +50,9 @@ const Name = styled.div`
 
 const Img = styled.img`
   border-radius: 30px;
-
-  @media (max-width: 1400px) {
-    // 미디어쿼리추가
-    height: 280px;
-    width: 310px;
-  }
+  max-width: 320px;
+  width: 100%;
+  object-fit: contain;
 `;
 
 const EmailBox = styled.div`
@@ -65,6 +60,7 @@ const EmailBox = styled.div`
   flex-direction: column;
   text-align: center;
   line-height: 35px;
+  width: 100%;
 `;
 
 const Span = styled.span`
@@ -80,6 +76,7 @@ const BtnBox = styled.div`
     width: 100%;
     justify-content: center;
     gap: 36px;
+    flex-wrap: wrap;
   }
 `;
 
@@ -118,7 +115,7 @@ function LeftSidebar() {
         <Name>Lia</Name>
         <Span>Front-end development</Span>
       </Header>
-      <Img src="./profile3.png"></Img>
+      <Img src="./profile2.png"></Img>
       <EmailBox>
         <Span>tjs4114@gmail.com</Span>
         <Span>서울시 송파구 문정동</Span>

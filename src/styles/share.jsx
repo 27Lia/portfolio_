@@ -4,15 +4,11 @@ export const Container = styled.div`
   overflow: auto;
   padding: 90px 0px;
   max-width: 700px;
-  // 미디어쿼리시 삭제
   margin: auto;
+  overflow: auto;
 
   &::-webkit-scrollbar {
     height: 12px;
-  }
-
-  @media (max-width: 1400px) {
-    margin: 0;
   }
 `;
 export const Button = styled.button`
