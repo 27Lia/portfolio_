@@ -19,9 +19,12 @@ export const Button = styled.button`
   border: 2px solid #cfd0c9;
   background-color: transparent;
   color: #cfd0c9;
-
-  &:hover {
-    border: 2px solid #07a94c;
+  a {
+    color: #fff;
+  }
+  &:hover,
+  &:hover a {
+    border-color: #07a94c;
     color: #07a94c;
   }
 `;

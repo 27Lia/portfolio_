@@ -122,16 +122,37 @@ function LeftSidebar() {
       </EmailBox>
       <BtnBox>
         <Button>
-          <IoHomeOutline />
+          <a
+            href="https://lia-portfolio.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IoHomeOutline />
+          </a>
         </Button>
         <Button>
-          <FaRegFilePdf />
+          <a href="/이력서_김선미.pdf" download="이력서_김선미.pdf">
+            <FaRegFilePdf />
+          </a>
         </Button>
         <Button>
-          <SiVelog />
+          <a
+            href="https://velog.io/@rlatjsal010/posts"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SiVelog />
+          </a>
         </Button>
         <Button>
-          <FaGithub />
+          {" "}
+          <a
+            href="https://github.com/27Lia"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub />{" "}
+          </a>
         </Button>
       </BtnBox>
       <EmailBtn onClick={handleEmailClick}>

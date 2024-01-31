@@ -32,7 +32,7 @@ const MainTitle = styled.h1`
 `;
 
 const Subtitle = styled.p`
-  font-size: 21px;
+  font-size: 19px;
   margin: 25px 0;
   color: #cfd0c9;
 `;
@@ -81,9 +81,9 @@ function Introduce() {
           <br /> <HighlightText>김선미</HighlightText>입니다.
         </MainTitle>
         <Subtitle>
-          아이디어를 현실로 만들고, 사용자의 경험을 향상시키는것에 집중합니다.
-          <br />
-          반복작업을 지양하고, 적극적인 소통을 지향합니다.
+          <HighlightText>사용자 참여 1만 명</HighlightText>이 넘는 서비스를
+          성공적으로 기획하고 개발한 프론트엔드 개발자로서, 효율적인 개발
+          프로세스와 사용자 경험 최적화에 중점을 두고 개발합니다.
         </Subtitle>
         <Link to="Portfolio" smooth={true} duration={500}>
           <Circle>
