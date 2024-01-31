@@ -68,6 +68,10 @@ function Portfolio() {
     justify-content: center;
     position: relative;
     gap: 40px;
+
+    @media (max-width: 600px) {
+      flex-wrap: wrap;
+    }
   `;
 
   const Button = styled.a`
