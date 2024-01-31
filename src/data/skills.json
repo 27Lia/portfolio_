@@ -66,10 +66,9 @@
     },
     {
         "id": 6,
-        "name": "Vercel,AWS,FIREBASE",
+        "name": "AWS, FIREBASE",
         "icons": [
-            "https://www.vectorlogo.zone/logos/vercel/vercel-icon.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
             "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg"
         ],
         "descriptions": [

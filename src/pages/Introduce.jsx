@@ -19,16 +19,17 @@ const Container = styled.div`
   max-width: 700px;
   width: 100%;
   margin: auto;
-  padding: 90px 0px 90px 0px;
-
-  @media (max-width: 1400px) {
-    /* margin: 0; */
-  }
+  padding: 180px 0px 90px 0px;
 `;
 
 const MainTitle = styled.h1`
   font-size: 70px;
+  /* font-size: 3.7vw; */
   font-weight: 300;
+
+  @media (max-width: 700px) {
+    font-size: 37px;
+  }
 `;
 
 const Subtitle = styled.p`

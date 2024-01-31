@@ -15,7 +15,6 @@ const CardBox = styled.div`
   align-items: center;
   flex-wrap: wrap;
   gap: 25px;
-
   @media (max-width: 700px) {
     justify-content: center;
   }
@@ -25,18 +24,17 @@ const SkillCard = styled.div`
   width: 200px;
   border-radius: 12px;
   height: 120px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   background-color: transparent;
   color: #fff;
-  transition: transform 0.3s ease;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2);
+  padding: 1px;
 
-  &:hover {
-    transform: scale(1.04);
+  @media (max-width: 700px) {
+    width: 120px;
   }
 `;
 
@@ -48,6 +46,12 @@ const SkillIcon = styled.img`
 const SkillName = styled.h4`
   font-size: 16px;
   font-weight: 400;
+  text-align: center; // 텍스트 중앙 정렬
+  word-wrap: break-word; // 긴 텍스트 줄바꿈
+
+  @media (max-width: 700px) {
+    font-size: 13px;
+  }
 `;
 
 function Skills() {

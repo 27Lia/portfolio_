@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Header />
-      <video class="body-overlay" autoPlay loop muted>
+      <video className="body-overlay" autoPlay loop muted playsInline>
         <source src="/wave5.mp4" type="video/mp4" />
       </video>
       <div className="container">

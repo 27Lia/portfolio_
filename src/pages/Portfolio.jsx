@@ -12,7 +12,7 @@ function Portfolio() {
   const Div = styled.div`
     position: relative;
     margin-bottom: 30px;
-    height: 400px;
+    height: 250px;
     background-color: #e6e4de;
     border-radius: 18px;
     width: 100%;
@@ -22,7 +22,7 @@ function Portfolio() {
     position: relative;
     margin-bottom: 30px;
     width: 100%;
-    height: 400px;
+    height: 250px;
     border-radius: 18px;
     background-color: #e9e9e9;
   `;
@@ -31,7 +31,7 @@ function Portfolio() {
     position: relative;
     margin-bottom: 30px;
     width: 100%;
-    height: 400px;
+    height: 250px;
     border-radius: 18px;
     background-color: #e9e9e9;
   `;
@@ -39,7 +39,7 @@ function Portfolio() {
   const Div3 = styled.div`
     position: relative;
     margin-bottom: 30px;
-    height: 400px;
+    height: 250px;
     background-color: #f5da97;
     border-radius: 18px;
     width: 100%;
@@ -49,7 +49,7 @@ function Portfolio() {
     position: relative;
     border-radius: 18px;
     margin-bottom: 30px;
-    height: 400px;
+    height: 250px;
     width: 100%;
     background-color: #b9b9b9;
     border-radius: 18px;
@@ -69,8 +69,9 @@ function Portfolio() {
     position: relative;
     gap: 40px;
 
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
       flex-wrap: wrap;
+      gap: 0px;
     }
   `;
 
@@ -128,7 +129,7 @@ function Portfolio() {
             </Button>
             <Button target="_blank" href="https://github.com/27Lia/celebee">
               Repo
-            </Button>{" "}
+            </Button>
           </BtnBox>
         </Div2>
 

@@ -78,6 +78,12 @@ const BtnBox = styled.div`
     gap: 36px;
     flex-wrap: wrap;
   }
+  @media (max-width: 700px) {
+    width: 100%;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
 `;
 
 const EmailBtn = styled.button`
