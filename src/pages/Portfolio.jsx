@@ -96,6 +96,11 @@ function Portfolio() {
     gap: 10px;
   `;
 
+  const Text = styled.div`
+    font-size: 21px;
+    color: #fff;
+  `;
+
   return (
     <Container id="Portfolio" data-aos="fade-up" data-aos-duration="1000">
       <Title>
@@ -118,6 +123,7 @@ function Portfolio() {
             Repo
           </Button>
         </BtnBox>
+        <Text>NCT MBTI TEST</Text>
       </Div>
 
       <SecondBox>
@@ -131,6 +137,7 @@ function Portfolio() {
               Repo
             </Button>
           </BtnBox>
+          <Text>하루모임 사이트</Text>
         </Div2>
 
         <Div22 data-aos="fade-left" data-aos-duration="1000">
@@ -148,6 +155,7 @@ function Portfolio() {
             Repo
           </Button>
         </BtnBox>
+        <Text>여주 고철 웹페이지</Text>
       </Div3>
 
       <Div4 data-aos="fade-down" data-aos-duration="1000">
@@ -166,6 +174,7 @@ function Portfolio() {
             Repo
           </Button>
         </BtnBox>
+        <Text>쇼핑몰</Text>
       </Div4>
     </Container>
   );
