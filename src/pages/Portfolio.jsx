@@ -8,7 +8,7 @@ import {
 } from "../styles/share";
 import styled from "styled-components";
 import { FaLink } from "react-icons/fa6";
-
+import { FaGithub } from "react-icons/fa6";
 function Portfolio() {
   const ProjectItem = styled.li`
     list-style: none;
@@ -57,20 +57,13 @@ function Portfolio() {
     }
   `;
 
-  const DataBox = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
-  `;
-
   const Div2 = styled.div`
     position: relative;
     width: 100%;
     height: 350px;
     border-radius: 18px;
     background-color: #e9e9e9;
-    padding: 20px 30px;
+    padding: 50px 30px;
 
     @media (max-width: 700px) {
       height: auto;
@@ -139,20 +132,6 @@ function Portfolio() {
 
   const Button = styled.a`
     background-color: transparent;
-    border: none;
-    font-size: 14px;
-    font-weight: 400;
-    background-color: #fff;
-    border-radius: 17px;
-    padding: 5px 18px;
-    box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.239);
-  `;
-
-  const BtnBox = styled.a`
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    gap: 10px;
   `;
 
   const Text = styled.div`
@@ -179,7 +158,7 @@ function Portfolio() {
   const LinkBox = styled.div`
     display: flex;
     align-items: center;
-    font-size: 15px;
+    font-size: 21px;
     gap: 8px;
   `;
   return (
@@ -195,7 +174,7 @@ function Portfolio() {
       </MainTitle>
       <DataContainer>
         <Div data-aos="fade-right" data-aos-duration="1000">
-            <Img src="../images/1.png" alt="포트폴리오 이미지" />
+          <Img src="../images/1.png" alt="포트폴리오 이미지" />
         </Div>
         <ProjectItem>
           <Text>
@@ -215,9 +194,11 @@ function Portfolio() {
               </p>
             </ProjectText>
             <LinkBox>
-              <FaLink />
-              <a href="https://nctmbti.vercel.app/">
-                https://nctmbti.vercel.app/
+              <Button href="https://github.com/27Lia/mbti" target="_blank">
+                <FaGithub />
+              </Button>
+              <a href="https://nctmbti.vercel.app/" target="blank">
+                <FaLink />
               </a>
             </LinkBox>
           </Text>
@@ -225,20 +206,7 @@ function Portfolio() {
 
         <SecondBox>
           <Div2 data-aos="fade-right" data-aos-duration="1000">
-            <DataBox>
-              <Img src="../images/3.png" alt="포트폴리오 이미지"></Img>
-              <BtnBox>
-                <Button
-                  href="https://celebee-three.vercel.app/"
-                  target="_blank"
-                >
-                  Site
-                </Button>
-                <Button target="_blank" href="https://github.com/27Lia/celebee">
-                  Repo
-                </Button>
-              </BtnBox>
-            </DataBox>
+            <Img src="../images/3.png" alt="포트폴리오 이미지"></Img>
           </Div2>
 
           <Div22 data-aos="fade-left" data-aos-duration="1000">
@@ -268,25 +236,17 @@ function Portfolio() {
               </p>
             </ProjectText>
             <LinkBox>
-              <FaLink />
-              <a href="https://celebee-three.vercel.app/">
-                https://celebee-three.vercel.app/
+              <Button href="https://github.com/27Lia/celebee" target="_blank">
+                <FaGithub />
+              </Button>
+              <a href="https://celebee-three.vercel.app/" target="black">
+                <FaLink />
               </a>
             </LinkBox>
           </Text>
         </ProjectItem>
         <Div3 data-aos="fade-up" data-aos-duration="1000">
-          <DataBox>
-            <Img src="../images/2.png" alt="포트폴리오 이미지"></Img>
-            <BtnBox>
-              <Button href="https://junkshop.vercel.app/" target="_blank">
-                Site
-              </Button>
-              <Button target="_blank" href="https://github.com/27Lia/junkshop">
-                Repo
-              </Button>
-            </BtnBox>
-          </DataBox>
+          <Img src="../images/2.png" alt="포트폴리오 이미지"></Img>
         </Div3>
         <ProjectItem>
           <Text>
@@ -300,31 +260,17 @@ function Portfolio() {
               <p>- 디자인 기획 및 반응형웹 구현, 슬라이드 구현</p>
             </ProjectText>
             <LinkBox>
-              <FaLink />
-              <a href="https://junkshop.vercel.app/">
-                https://junkshop.vercel.app/
+              <Button href="https://github.com/27Lia/junkshop" target="_blank">
+                <FaGithub />
+              </Button>
+              <a href="https://junkshop.vercel.app/" target="blank">
+                <FaLink />
               </a>
             </LinkBox>
           </Text>
         </ProjectItem>
         <Div4 data-aos="fade-down" data-aos-duration="1000">
-          <DataBox>
-            <Img src="../images/5.png" alt="포트폴리오 이미지"></Img>
-            <BtnBox>
-              <Button
-                href="https://fe-sprint-coz-shopping-eta.vercel.app/"
-                target="_blank"
-              >
-                Site
-              </Button>
-              <Button
-                target="_blank"
-                href="https://github.com/27Lia/fe-sprint-coz-shopping"
-              >
-                Repo
-              </Button>
-            </BtnBox>
-          </DataBox>
+          <Img src="../images/5.png" alt="포트폴리오 이미지"></Img>
         </Div4>
         <ProjectItem>
           <Text>
@@ -346,9 +292,17 @@ function Portfolio() {
               </p>
             </ProjectText>
             <LinkBox>
-              <FaLink />
-              <a href="https://fe-sprint-coz-shopping-eta.vercel.app/">
-                https://fe-sprint-coz-shopping-eta.vercel.app/
+              <Button
+                href="https://github.com/27Lia/fe-sprint-coz-shopping"
+                target="_blank"
+              >
+                <FaGithub />
+              </Button>
+              <a
+                href="https://fe-sprint-coz-shopping-eta.vercel.app/"
+                target="blank"
+              >
+                <FaLink />
               </a>
             </LinkBox>
           </Text>
