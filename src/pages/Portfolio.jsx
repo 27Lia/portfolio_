@@ -195,17 +195,7 @@ function Portfolio() {
       </MainTitle>
       <DataContainer>
         <Div data-aos="fade-right" data-aos-duration="1000">
-          <DataBox>
             <Img src="../images/1.png" alt="포트폴리오 이미지" />
-            <BtnBox>
-              <Button href="https://nctmbti.vercel.app/" target="_blank">
-                Site
-              </Button>
-              <Button target="_blank" href="https://github.com/27Lia/mbti">
-                Repo
-              </Button>
-            </BtnBox>
-          </DataBox>
         </Div>
         <ProjectItem>
           <Text>
