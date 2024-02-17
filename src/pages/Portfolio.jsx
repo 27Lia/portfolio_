@@ -299,7 +299,7 @@ function Portfolio() {
                 <FaGithub />
               </Button>
               <a
-                href="https://fe-sprint-coz-shopping-eta.vercel.app/"
+                href="https://27lia.github.io/fe-sprint-coz-shopping/"
                 target="blank"
               >
                 <FaLink />
