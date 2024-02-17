@@ -197,7 +197,7 @@ function Portfolio() {
               <Button href="https://github.com/27Lia/mbti" target="_blank">
                 <FaGithub />
               </Button>
-              <a href="https://nctmbti.vercel.app/" target="blank">
+              <a href="https://27lia.github.io/mbti/" target="blank">
                 <FaLink />
               </a>
             </LinkBox>
