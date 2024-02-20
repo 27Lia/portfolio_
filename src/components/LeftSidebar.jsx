@@ -137,7 +137,7 @@ function LeftSidebar() {
           </a>
         </Button>
         <Button>
-          <a href="/이력서_김선미.pdf" download="public/[프론트엔드]이력서 및 포트폴리오-김선미.pdf">
+          <a href="/.public/[프론트엔드]이력서 및 포트폴리오-김선미.pdf" download="public/[프론트엔드]이력서 및 포트폴리오-김선미.pdf">
             <FaRegFilePdf />
           </a>
         </Button>
