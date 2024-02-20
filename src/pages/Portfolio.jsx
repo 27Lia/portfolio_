@@ -180,7 +180,7 @@ function Portfolio() {
           <Text>
             <PortfolioHeader>
               <h3>NCT MBTI TEST</h3>
-              <p>2024.01.18~ 2023.01.24</p>
+              <p>2024.01.18~ 2024.01.24</p>
             </PortfolioHeader>
             <p>
               사용자와 같은 유형인 멤버와 궁합멤버를 추천해주는
