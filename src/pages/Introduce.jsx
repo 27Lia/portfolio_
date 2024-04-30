@@ -19,7 +19,7 @@ const Container = styled.div`
   max-width: 700px;
   width: 100%;
   margin: auto;
-  padding: 180px 0px 90px 0px;
+  /* padding: 180px 0px 90px 0px; */
 `;
 
 const MainTitle = styled.h1`

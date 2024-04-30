@@ -1,9 +1,10 @@
 import styled from "styled-components";
-import { IoHomeOutline } from "react-icons/io5";
-import { FaRegFilePdf, FaGithub } from "react-icons/fa6";
-import { SiVelog } from "react-icons/si"; // Simple Icons
+import { FaGithub } from "react-icons/fa6";
+import { SiVelog } from "react-icons/si";
 import { Button } from "../styles/share";
 import { MdOutlineEmail } from "react-icons/md";
+import { SiNotion } from "react-icons/si";
+import { AiFillProject } from "react-icons/ai";
 
 const Container = styled.div`
   max-width: 400px;
@@ -129,16 +130,20 @@ function LeftSidebar() {
       <BtnBox>
         <Button>
           <a
-            href="https://lia-portfolio.vercel.app/"
+            href="https://ksm-resume.notion.site/ca9fdc2b6d2d4528adbfc24215584854?pvs=4"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <IoHomeOutline />
+            <AiFillProject />
           </a>
         </Button>
         <Button>
-          <a href="/[프론트엔드]이력서 및 포트폴리오-김선미.pdf" download="[프론트엔드]이력서 및 포트폴리오-김선미.pdf">
-            <FaRegFilePdf />
+          <a
+            href="https://ksm-resume.notion.site/0f2cb139cd02405abd16843d15f7a4cc?pvs=4"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <SiNotion />
           </a>
         </Button>
         <Button>

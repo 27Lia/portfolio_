@@ -216,23 +216,21 @@ function Portfolio() {
         <ProjectItem>
           <Text>
             <PortfolioHeader>
-              <h3>하루모임 사이트</h3>
+              <h4>하루모임 사이트</h4>
               <p>2023.08.24 ~ 2023.09.22</p>
             </PortfolioHeader>
-            <p>카드 형태로 모임을 만들고 참여하는 플랫폼입니다.</p>
+            <h5>카드 형태로 모임을 만들고 참여하는 플랫폼입니다.</h5>
             <ProjectText>
-              <p>- 카드작성페이지, 카드조회페이지, 카드참여, 찜기능 등 구현</p>
+              <p>- 서비스 기획 및 UI/UX 디자인 구현</p>
+              <p>- 반응형웹 구현</p>
               <p>
-                - 카카오맵 API를 활용한 키워드검색,마크표시 등 다양한 지도
+                - React Hook Form의 도입으로 사용자 경험 개선, 중단 시간 50%
+                감소
+              </p>
+              <p>- 카드작성, 카드조회, 참여, 찜기능 등 구현</p>
+              <p>
+                - 카카오맵 API를 활용한 키워드검색, 마크표시 등 다양한 지도
                 서비스 기능 구현
-              </p>
-              <p>
-                - 전반적인 서비스 기획 및 UI/UX 디자인 구현, React-hook-form을
-                이용한 폼 유효성 검사
-              </p>
-              <p>
-                - Keyframes를 이용한 반응형웹 구현, React Hook Form의 도입으로
-                사용자 경험 개선, 중단 시간 50% 감소
               </p>
             </ProjectText>
             <LinkBox>
@@ -253,20 +251,17 @@ function Portfolio() {
           <Text>
             <PortfolioHeader>
               <h3>쇼핑몰</h3>
-              <p>2023.07 ~ 2023.08 (In development)</p>
+              <p>2023.07 ~ 2023.08 (2024.03~ In development)</p>
             </PortfolioHeader>
             <p>Firebase를 사용한 간단한 쇼핑몰 웹 사이트입니다.</p>
             <ProjectText>
-              <p>- Firebase를 활용한 로그인, 회원가입, 문의게시판 구현</p>
-              <p>- 필터링, 무한 스크롤, 북마크, toast message 알림 기능 구현</p>
               <p>
-                - Stylecomponent를 활용하여 디자인 구현, S3 버킷으로 웹사이트
-                배포
+                - 로그인, 회원가입, 문의게시판, 장바구니, 필터링, 무한 스크롤,
+                toast message 알림 구현
               </p>
-              <p>
-                - 리덕스를 활용한 상태관리, 무한 스크롤 기능 도입으로 초기 로딩
-                시 데이터 양 10% 감소
-              </p>
+              <p>- Stylecomponent를 활용하여 스타일 구현</p>
+              <p>- 리덕스를 활용한 상태관리</p>
+              <p>- 무한 스크롤 기능 도입으로 초기 로딩 시 데이터 양 10% 감소</p>
             </ProjectText>
             <LinkBox>
               <Button
@@ -296,8 +291,9 @@ function Portfolio() {
             </PortfolioHeader>
             <p>회사소개 웹페이지 외주제작 프로젝트입니다.</p>
             <ProjectText>
-              <p>- SEO 최적화</p>
-              <p>- 디자인 기획 및 반응형웹 구현, 슬라이드 구현</p>
+              <p>- SEO 최적화 / 구글페이지 검색 시 1페이지 노출</p>
+              <p>- 디자인 기획</p>
+              <p>- 반응형웹 구현</p>
             </ProjectText>
             <LinkBox>
               <Button href="https://github.com/27Lia/junkshop" target="_blank">
