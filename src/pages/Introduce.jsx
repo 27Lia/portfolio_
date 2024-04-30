@@ -19,7 +19,7 @@ const Container = styled.div`
   max-width: 700px;
   width: 100%;
   margin: auto;
-  /* padding: 180px 0px 90px 0px; */
+  padding-top: 90px;
 `;
 
 const MainTitle = styled.h1`
@@ -57,6 +57,7 @@ const Img = styled.img`
   height: auto;
   animation: ${rotate} 8s linear infinite;
   position: absolute;
+  cursor: pointer;
 `;
 
 const Arrow = styled.button`
@@ -65,6 +66,7 @@ const Arrow = styled.button`
   border: none;
   color: #fff;
   z-index: 1000;
+  cursor: pointer;
 `;
 
 function Introduce() {
@@ -88,7 +90,7 @@ function Introduce() {
         </Subtitle>
         <Link to="Portfolio" smooth={true} duration={500}>
           <Circle>
-            <Img src="../images/font.png" alt="dd" />
+            <Img src="../images/font.png" alt="projetcbutton" />
             <Arrow>↓</Arrow>
           </Circle>
         </Link>
