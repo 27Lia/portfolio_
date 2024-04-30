@@ -19,7 +19,7 @@ const Container = styled.div`
   max-width: 700px;
   width: 100%;
   margin: auto;
-  padding-top: 90px;
+  padding: 90px 0px;
 `;
 
 const MainTitle = styled.h1`
@@ -57,7 +57,6 @@ const Img = styled.img`
   height: auto;
   animation: ${rotate} 8s linear infinite;
   position: absolute;
-  cursor: pointer;
 `;
 
 const Arrow = styled.button`
