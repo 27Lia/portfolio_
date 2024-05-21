@@ -41,7 +41,18 @@
         "gradient": "linear-gradient(145deg, #2685f1, #9bc0e3)"
     },
     {
-        "id": 4,
+        "id": 5,
+        "name": "nextJS",
+        "icons": [
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+        ],
+        "descriptions": [
+            ""
+        ],
+        "gradient": "linear-gradient(145deg, #cdb3f5, #633f9d)"
+    },
+    {
+        "id": 6,
         "name": "Redux",
         "icons": [
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
@@ -53,7 +64,7 @@
         "gradient": "linear-gradient(145deg, #cdb3f5, #633f9d)"
     },
     {
-        "id": 5,
+        "id": 7,
         "name": "Styled Components",
         "icons": [
             "https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png"
@@ -65,7 +76,7 @@
         "gradient": "linear-gradient(145deg, #eb83a6, #f1b6a2)"
     },
     {
-        "id": 6,
+        "id": 8,
         "name": "AWS, FIREBASE",
         "icons": [
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
@@ -79,7 +90,7 @@
         "gradient": "linear-gradient(145deg, #f35f51, #eca324, #ef8a24)"
     },
     {
-        "id": 7,
+        "id": 9,
         "name": "Three.js",
         "icons": [
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg"
@@ -91,7 +102,7 @@
         "gradient": "linear-gradient(145deg, #8f94fb, #4e54c8)"
     },
     {
-        "id": 8,
+        "id": 10,
         "name": "FIGMA",
         "icons": [
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
