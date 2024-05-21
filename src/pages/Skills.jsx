@@ -22,20 +22,60 @@ const CardBox = styled.div`
 
 const SkillCard = styled.div`
   width: 200px;
-  border-radius: 12px;
   height: 120px;
+  perspective: 1000px;
+
+  @media (max-width: 700px) {
+    width: 120px;
+  }
+`;
+
+const SkillCardInner = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s ease-in-out;
+  transform-style: preserve-3d;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  will-change: transform;
+
+  &:hover {
+    transform: rotateY(180deg);
+  }
+`;
+
+const SkillCardFront = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   background-color: transparent;
   color: #fff;
-  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
   padding: 1px;
+`;
 
-  @media (max-width: 700px) {
-    width: 120px;
-  }
+const SkillCardBack = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  background-color: #333;
+  color: #fff;
+  transform: rotateY(180deg);
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2);
 `;
 
 const SkillIcon = styled.img`
@@ -46,11 +86,21 @@ const SkillIcon = styled.img`
 const SkillName = styled.h4`
   font-size: 16px;
   font-weight: 400;
-  text-align: center; // 텍스트 중앙 정렬
-  word-wrap: break-word; // 긴 텍스트 줄바꿈
+  text-align: center;
+  word-wrap: break-word;
 
   @media (max-width: 700px) {
     font-size: 13px;
+  }
+`;
+
+const SkillDescription = styled.p`
+  font-size: 12px;
+  text-align: left;
+  margin: 5px 0;
+
+  @media (max-width: 700px) {
+    font-size: 10px;
   }
 `;
 
@@ -70,16 +120,27 @@ function Skills() {
       <CardBox data-aos="fade-left" data-aos-duration="1200">
         {skills.map((skill, index) => (
           <SkillCard key={skill.id} index={index}>
-            <SkillName>{skill.name}</SkillName>
-            <div>
-              {skill.icons.map((icon, iconIndex) => (
-                <SkillIcon
-                  key={iconIndex}
-                  src={icon}
-                  alt={`${skill.name} icon`}
-                />
-              ))}
-            </div>
+            <SkillCardInner>
+              <SkillCardFront>
+                <SkillName>{skill.name}</SkillName>
+                <div>
+                  {skill.icons.map((icon, iconIndex) => (
+                    <SkillIcon
+                      key={iconIndex}
+                      src={icon}
+                      alt={`${skill.name} icon`}
+                    />
+                  ))}
+                </div>
+              </SkillCardFront>
+              <SkillCardBack>
+                {skill.descriptions.map((description, descIndex) => (
+                  <SkillDescription key={descIndex}>
+                    {description}
+                  </SkillDescription>
+                ))}
+              </SkillCardBack>
+            </SkillCardInner>
           </SkillCard>
         ))}
       </CardBox>
