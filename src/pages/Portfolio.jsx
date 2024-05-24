@@ -271,7 +271,7 @@ function Portfolio() {
                 <FaGithub />
               </Button>
               <a
-                href="https://27lia.github.io/fe-sprint-coz-shopping/"
+                href="https://fe-sprint-coz-shopping-git-main-27lias-projects.vercel.app/"
                 target="blank"
               >
                 <FaLink />
