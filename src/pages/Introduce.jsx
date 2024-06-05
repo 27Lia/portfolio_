@@ -83,7 +83,7 @@ function Introduce() {
           <br /> <HighlightText>김선미</HighlightText>입니다.
         </MainTitle>
         <Subtitle>
-          <HighlightText>사용자 참여 1만 명</HighlightText>이 넘는 서비스를
+          <HighlightText>사용자 참여 약 2만 명</HighlightText>이 넘는 서비스를
           성공적으로 기획하고 개발한 프론트엔드 개발자로서, 효율적인 개발
           프로세스와 사용자 경험 최적화에 중점을 두고 개발합니다.
         </Subtitle>

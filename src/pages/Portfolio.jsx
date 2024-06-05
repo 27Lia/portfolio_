@@ -9,6 +9,7 @@ import {
 import styled from "styled-components";
 import { FaLink } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
+
 function Portfolio() {
   const ProjectItem = styled.li`
     list-style: none;
@@ -45,8 +46,8 @@ function Portfolio() {
   `;
 
   const Div = styled.div`
-    height: 400px;
-    background-color: #e0e0e0;
+    height: 450px;
+    background-color: #fff;
     border-radius: 18px;
     width: 100%;
     padding: 50px 30px;
@@ -62,7 +63,7 @@ function Portfolio() {
     width: 100%;
     height: 350px;
     border-radius: 18px;
-    background-color: #f9f5e7;
+    background-color: #fff;
     padding: 50px 30px;
 
     @media (max-width: 700px) {
@@ -76,7 +77,7 @@ function Portfolio() {
     width: 100%;
     height: 350px;
     border-radius: 18px;
-    background-color: #f9f5e7;
+    background-color: #fff;
     padding: 50px 30px;
     @media (max-width: 700px) {
       height: auto;
@@ -86,8 +87,8 @@ function Portfolio() {
 
   const Div3 = styled.div`
     position: relative;
-    height: 400px;
-    background-color: #f5f5dc;
+    height: 450px;
+    background-color: #fff;
     border-radius: 18px;
     width: 100%;
 
@@ -101,10 +102,23 @@ function Portfolio() {
   const Div4 = styled.div`
     position: relative;
     border-radius: 18px;
-    height: 400px;
+    height: 450px;
     width: 100%;
-    background-color: #404495;
+    background-color: #fff;
     border-radius: 18px;
+    padding: 50px 30px;
+    @media (max-width: 700px) {
+      height: auto;
+      padding: 20px;
+    }
+  `;
+
+  const Div5 = styled.div`
+    position: relative;
+    border-radius: 18px;
+    height: 450px;
+    width: 100%;
+    background-color: #fff;
     padding: 50px 30px;
     @media (max-width: 700px) {
       height: auto;
@@ -115,7 +129,6 @@ function Portfolio() {
   const Img = styled.img`
     width: 100%;
     height: 100%;
-    border-radius: 18px;
     object-fit: cover;
   `;
 
@@ -173,6 +186,48 @@ function Portfolio() {
         My <HighlightText>Projects</HighlightText>
       </MainTitle>
       <DataContainer>
+        <Div5 data-aos="fade-up" data-aos-duration="1000">
+          <Img src="../images/6.png" alt="포트폴리오 이미지"></Img>
+        </Div5>
+        <ProjectItem>
+          <Text>
+            <PortfolioHeader>
+              <h3>readme-decorate</h3>
+              <p>2024.05.18~ 05.28</p>
+            </PortfolioHeader>
+            <p>
+              사용자가 입력한 다양한 파라미터를 기반으로 커스터마이즈된 SVG
+              이미지를 생성해주는 웹서비스입니다.
+            </p>
+            <ProjectText>
+              <p>
+                - SVG 이미지 생성: 텍스트, 글꼴 색상, 배경 색상, 글꼴 크기 등
+                다양한 커스터마이징 옵션 제공
+              </p>
+
+              <p>
+                - URL 생성 및 공유: 생성된 SVG 이미지의 URL을 생성하여 공유할 수
+                있는 기능
+              </p>
+              <p>
+                - Next.js 서버사이드 렌더링 및 API 개발: GET, POST 요청을
+                처리하는 API 엔드포인트 구현
+              </p>
+            </ProjectText>
+            <LinkBox>
+              <Button
+                href="https://github.com/27Lia/readme-decorate"
+                target="_blank"
+              >
+                <FaGithub />
+              </Button>
+              <a href="https://readme-decorate.vercel.app/" target="blank">
+                <FaLink />
+              </a>
+            </LinkBox>
+          </Text>
+        </ProjectItem>
+
         <Div data-aos="fade-right" data-aos-duration="1000">
           <Img src="../images/1.png" alt="포트폴리오 이미지" />
         </Div>
@@ -251,7 +306,7 @@ function Portfolio() {
           <Text>
             <PortfolioHeader>
               <h3>쇼핑몰</h3>
-              <p>2023.07 ~ 2023.08 (2024.03~ In development)</p>
+              <p>2023.07 ~ 2024.03 (중간에 develop)</p>
             </PortfolioHeader>
             <p>Firebase를 사용한 간단한 쇼핑몰 웹 사이트입니다.</p>
             <ProjectText>

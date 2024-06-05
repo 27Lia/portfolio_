@@ -8,7 +8,7 @@
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
         ],
         "descriptions": [
-            "SEO 최적화로 검색 엔진 가시성 향상 가능",
+            "SEO 최적화",
             "반응형 웹 디자인 구현",
             "비동기 작업 활용"
         ],
@@ -21,8 +21,8 @@
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
         ],
         "descriptions": [
-            "상태관리 및 Hook사용",
-            "로그인, 게시판, 장바구니 등 기능개발 가능",
+            "상태 관리 및 Hooks",
+            "인증, 게시판, 장바구니 등 기능 개발 가능",
             "다양한 라이브러리 활용경험"
         ],
         "gradient": "linear-gradient(145deg, #ffffff, #24a1ea)   "
@@ -34,7 +34,7 @@
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
         ],
         "descriptions": [
-            "Props와 State에 타입 적용",
+            "타입 적용",
             "tpye과 interface 사용"
         ],
         "gradient": "linear-gradient(145deg, #2685f1, #9bc0e3)"
@@ -46,9 +46,8 @@
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
         ],
         "descriptions": [
-            "api 개발가능",
-            "라우팅 시스템을 사용",
-            "현재 학습중"
+            "API 개발",
+            "라우팅 시스템을 사용"
         ],
         "gradient": "linear-gradient(145deg, #cdb3f5, #633f9d)"
     },
@@ -60,7 +59,7 @@
         ],
         "descriptions": [
             "전역 상태관리",
-            "상태를 일관되게 유지"
+            "상태 유지"
         ],
         "gradient": "linear-gradient(145deg, #cdb3f5, #633f9d)"
     },
@@ -71,7 +70,7 @@
             "https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png"
         ],
         "descriptions": [
-            "외부 의존성을 줄이고 모듈화된 스타일링 적용"
+            "모듈화된 스타일링"
         ],
         "gradient": "linear-gradient(145deg, #eb83a6, #f1b6a2)"
     },
