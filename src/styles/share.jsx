@@ -20,7 +20,11 @@ export const Button = styled.button`
   background-color: transparent;
   color: #cfd0c9;
   a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #fff;
+    height: 100%;
   }
   &:hover,
   &:hover a {

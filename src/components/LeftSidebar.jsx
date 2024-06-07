@@ -125,7 +125,7 @@ function LeftSidebar() {
       <Img src="./profile2.png"></Img>
       <EmailBox>
         <Span>tjs4114@gmail.com</Span>
-        <Span>서울시 송파구 문정동</Span>
+        <Span>서울시 송파구</Span>
       </EmailBox>
       <BtnBox>
         <Button>

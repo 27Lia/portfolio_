@@ -85,47 +85,6 @@ function Portfolio() {
     }
   `;
 
-  const Div3 = styled.div`
-    position: relative;
-    height: 450px;
-    background-color: #fff;
-    border-radius: 18px;
-    width: 100%;
-
-    padding: 50px 30px;
-    @media (max-width: 700px) {
-      height: auto;
-      padding: 20px;
-    }
-  `;
-
-  const Div4 = styled.div`
-    position: relative;
-    border-radius: 18px;
-    height: 450px;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 18px;
-    padding: 50px 30px;
-    @media (max-width: 700px) {
-      height: auto;
-      padding: 20px;
-    }
-  `;
-
-  const Div5 = styled.div`
-    position: relative;
-    border-radius: 18px;
-    height: 450px;
-    width: 100%;
-    background-color: #fff;
-    padding: 50px 30px;
-    @media (max-width: 700px) {
-      height: auto;
-      padding: 20px;
-    }
-  `;
-
   const Img = styled.img`
     width: 100%;
     height: 100%;
@@ -186,9 +145,9 @@ function Portfolio() {
         My <HighlightText>Projects</HighlightText>
       </MainTitle>
       <DataContainer>
-        <Div5 data-aos="fade-up" data-aos-duration="1000">
+        <Div data-aos="fade-up" data-aos-duration="1000">
           <Img src="../images/6.png" alt="포트폴리오 이미지"></Img>
-        </Div5>
+        </Div>
         <ProjectItem>
           <Text>
             <PortfolioHeader>
@@ -299,9 +258,9 @@ function Portfolio() {
           </Text>
         </ProjectItem>
 
-        <Div4 data-aos="fade-down" data-aos-duration="1000">
+        <Div data-aos="fade-down" data-aos-duration="1000">
           <Img src="../images/5.png" alt="포트폴리오 이미지"></Img>
-        </Div4>
+        </Div>
         <ProjectItem>
           <Text>
             <PortfolioHeader>
@@ -335,9 +294,9 @@ function Portfolio() {
           </Text>
         </ProjectItem>
 
-        <Div3 data-aos="fade-up" data-aos-duration="1000">
+        <Div data-aos="fade-up" data-aos-duration="1000">
           <Img src="../images/2.png" alt="포트폴리오 이미지"></Img>
-        </Div3>
+        </Div>
         <ProjectItem>
           <Text>
             <PortfolioHeader>
