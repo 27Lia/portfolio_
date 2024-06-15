@@ -16,7 +16,7 @@ const Container = styled.div`
   padding: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   color: #fff;
   position: fixed;
   left: 20px;
@@ -88,7 +88,7 @@ const BtnBox = styled.div`
 `;
 
 const EmailBtn = styled.button`
-  width: 100%;
+  width: 320px;
   padding: 16px;
   border-radius: 30px;
   background-color: #07a94c;
@@ -123,10 +123,7 @@ function LeftSidebar() {
         <Span>Front-end development</Span>
       </Header>
       <Img src="./profile2.png"></Img>
-      <EmailBox>
-        <Span>tjs4114@gmail.com</Span>
-        <Span>서울시 송파구</Span>
-      </EmailBox>
+      {/* <EmailBox></EmailBox> */}
       <BtnBox>
         <Button>
           <a
