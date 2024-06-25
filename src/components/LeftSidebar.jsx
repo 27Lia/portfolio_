@@ -5,6 +5,7 @@ import { Button } from "../styles/share";
 import { MdOutlineEmail } from "react-icons/md";
 import { SiNotion } from "react-icons/si";
 import { AiFillProject } from "react-icons/ai";
+// import AIIcon from "./AiIcon";
 
 const Container = styled.div`
   max-width: 400px;
@@ -12,8 +13,8 @@ const Container = styled.div`
   width: 100%;
   border-radius: 30px;
   border: 1px solid #cfd0c94f;
-  height: 750px;
-  padding: 50px;
+  height: 600px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -25,7 +26,7 @@ const Container = styled.div`
   box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.497);
 
   @media (max-width: 1400px) {
-    max-width: 700px;
+    max-width: 500px;
     padding: 30px;
     transform: none;
     top: auto;
@@ -38,7 +39,7 @@ const Container = styled.div`
 
 const Header = styled.div`
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   @media (max-width: 1400px) {
     width: 100%;
   }
@@ -54,14 +55,6 @@ const Img = styled.img`
   max-width: 320px;
   width: 100%;
   object-fit: contain;
-`;
-
-const EmailBox = styled.div`
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  line-height: 35px;
-  width: 100%;
 `;
 
 const Span = styled.span`
@@ -88,15 +81,15 @@ const BtnBox = styled.div`
 `;
 
 const EmailBtn = styled.button`
-  width: 320px;
-  padding: 16px;
+  width: 100%;
+  padding: 12px;
   border-radius: 30px;
   background-color: #07a94c;
   border: 1px solid #07a94c;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   font-weight: 300;
 
@@ -110,6 +103,10 @@ const Icon = styled(MdOutlineEmail)`
   margin: 2px 10px 0px 0px;
 `;
 
+const NameBox = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 function LeftSidebar() {
   const handleEmailClick = () => {
     window.location.href =
@@ -119,11 +116,15 @@ function LeftSidebar() {
   return (
     <Container>
       <Header>
-        <Name>Lia</Name>
-        <Span>Front-end development</Span>
+        <NameBox>
+          <Name>Lia</Name>
+          <Span>Front-end development</Span>
+        </NameBox>
+        {/* <AIIcon /> */}
       </Header>
+
       <Img src="./profile2.png"></Img>
-      {/* <EmailBox></EmailBox> */}
+
       <BtnBox>
         <Button>
           <a
