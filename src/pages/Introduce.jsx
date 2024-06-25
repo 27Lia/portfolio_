@@ -12,10 +12,15 @@ const rotate = keyframes`
     transform: rotate(360deg);
   }
 `;
+const OuterContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+`;
 
 const Container = styled.div`
   color: #fff;
-  position: relative;
   max-width: 700px;
   width: 100%;
   margin: auto;
@@ -24,7 +29,6 @@ const Container = styled.div`
 
 const MainTitle = styled.h1`
   font-size: 70px;
-  /* font-size: 3.7vw; */
   font-weight: 300;
 
   @media (max-width: 700px) {
@@ -70,7 +74,7 @@ const Arrow = styled.button`
 
 function Introduce() {
   return (
-    <>
+    <OuterContainer>
       <Container data-aos="fade-up" data-aos-duration="900">
         <Title>
           <Icon>
@@ -94,7 +98,7 @@ function Introduce() {
           </Circle>
         </Link>
       </Container>
-    </>
+    </OuterContainer>
   );
 }
 

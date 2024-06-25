@@ -26,6 +26,10 @@
   height: 100%;
   margin-left: calc(400px); /* 사이드바 너비  */ 
   margin-right: calc(150px);   /*사이드바 너비 + 사이드바의 margin-left */
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
 
   
     @media (max-width: 1400px) {

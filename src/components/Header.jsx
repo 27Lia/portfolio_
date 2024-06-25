@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Div = styled.div`
-  /* height: 100px; */
+  height: 100px;
 `;
 
 function Header() {
